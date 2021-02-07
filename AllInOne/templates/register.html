@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="d-flex justify-content-center">
+    <form action="" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control w-200" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control w-200" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-success" style="display: block;
+    width: 100%;
+    text-align: center;">Sign in
+            </button>
+
+            <button type="button" class="btn btn-light border border-dark"><a href="http://127.0.0.1:5000/registration"
+                                                                              class="text-dark">Create an account</a>
+            </button>
+
+        </form>
+
+    </div>
+
+{%endblock%}
