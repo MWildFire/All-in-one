@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet/less" href="../static/dropdown.less" type="text/css" />
+    <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
-<body>
-    {% block content %}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">AllInOne</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
+<body style="background: #33363d">
+    <nav class="menu">
+      <ol>
+        <li class="menu-item"><a href="#0">Home</a></li>
+        <li class="menu-item"><a href="#0">About</a></li>
+        <li class="menu-item">
+          <a href="#0">Widgets</a>
+          <ol class="sub-menu">
+            <li class="menu-item"><a href="#0">Big Widgets</a></li>
+            <li class="menu-item"><a href="#0">Bigger Widgets</a></li>
+            <li class="menu-item"><a href="#0">Huge Widgets</a></li>
+          </ol>
+        </li>
+        <li class="menu-item">
+          <a href="#0">Kabobs</a>
+          <ol class="sub-menu">
+            <li class="menu-item"><a href="#0">Shishkabobs</a></li>
+            <li class="menu-item"><a href="#0">BBQ kabobs</a></li>
+            <li class="menu-item"><a href="#0">Summer kabobs</a></li>
+          </ol>
+        </li>
+        <li class="menu-item"><a href="#0">Contact</a></li>
+      </ol>
     </nav>
+    {% block content %}
+
     {% endblock %}
 </body>
 </html>
