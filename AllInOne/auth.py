@@ -13,3 +13,4 @@ def login():
 @auth.route('/reg')
 def reg():
     return render_template('register.html')
+
