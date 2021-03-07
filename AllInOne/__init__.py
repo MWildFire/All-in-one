@@ -8,6 +8,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 db = SQLAlchemy()
 mail = Mail()
 
+
 def create_app():
     app = Flask(__name__)
 
@@ -25,6 +26,8 @@ def create_app():
     )
     mail.init_app(app)
     db.init_app(app)
+
+    from .models import User
 
     from .auth import auth as auth_blueprint
 
