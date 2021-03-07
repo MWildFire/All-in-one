@@ -26,3 +26,9 @@ def send():
         return 'Сообщение отправлено'
     except Exception as e:
         return str(e)
+
+
+@main.route('/profile')
+@login_required
+def profile():
+    return 'Здесь будет страница профиля'

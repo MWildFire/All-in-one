@@ -23,6 +23,7 @@ def login_handler():
         return redirect('/login')
 
     user.is_auth = True
+    login_user(user)
     return redirect('/')
 
 
