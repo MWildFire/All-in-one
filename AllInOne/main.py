@@ -18,7 +18,7 @@ def change_pass():
 
 
 @main.route('/change_password', methods=['POST'])
-def change_pass():
+def change_pass_hanlder():
     return 'Здесь будет обработка смены пароля у пользователя'
 
 
