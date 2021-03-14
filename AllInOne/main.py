@@ -12,6 +12,16 @@ def start():
     return render_template('start.html')
 
 
+@main.route('/change_password', methods=['GET'])
+def change_pass():
+    return render_template('change_pass.html')
+
+
+@main.route('/change_password', methods=['POST'])
+def change_pass():
+    return 'Здесь будет обработка смены пароля у пользователя'
+
+
 @main.route('/base')
 def base():
     return render_template("base.html")
