@@ -41,16 +41,34 @@ def reg_handler():
     password = request.form.get("password")
     repeat_password = request.form.get("repeat-password")
     if password == repeat_password:
-        if set('@').isdisjoint(set(password)):
-            return 'Пароль не содержит специальных симоволов'
+        check_alphabet = 0
+        check_num = 0
+        check_special_symbols = 0
+        for i in password:
+            if str(i).isalpha():
+                check_alphabet = 1
+            if str(i).isdigit():
+                check_num = 1
+            if str(i) in punctuation:
+                check_special_symbols = 1
+
+        if check_alphabet == 0:
+            return 'В пароле нет букв'
         else:
-            new_user = User(email=email,
-                            username=username,
-                            password=password)
-            db.session.add(new_user)
-            db.session.commit()
-            response = send(email)
-            return render_template('email_confirmation.html', response=response)
+            if check_num == 0:
+                return 'В пароле нет цифр'
+            else:
+                if check_special_symbols == 0:
+                    return 'В пароле нет специальных символов'
+                else:
+                    new_user = User(email=email,
+                                    username=username,
+                                    password=password)
+                    db.session.add(new_user)
+                    db.session.commit()
+                    response = send(email)
+                    return render_template('email_confirmation.html', response=response)
+
     else:
         return 'Пароли не свопадают'
 
