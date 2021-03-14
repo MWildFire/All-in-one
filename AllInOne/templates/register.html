@@ -1,48 +1,33 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="d-flex justify-content-center my-3 py-2 px-4 " style="margin: 0 auto ; border-radius: 10px; background: white; width: 23%; border: solid grey; height: auto ">
-         <form action="" method="post" class="mx-2 my-4">
-                    <span style="font-size: 30px; font-weight: bolder;" class="d-flex justify-content-center my-3">Create your account</span>
-         </form>
-<div class="d-flex justify-content-center my-3 py-4 px-1" style="margin: 0 650px; border-radius: 10px; background: lightblue">
-         <form action="/reg" method="post" class="mx-2">
-
-                    <div class="input-group mb-3">
-                            <label class="form-label"> Username
-                          <input name="username" type="text" class="form-control" placeholder="Create username" aria-label="Username" aria-describedby="basic-addon1" style="width: 300px"></label>
-                    </div>
-                    <div class="input-group ">
-                        <label class="form-label"> First name
-                          <input name="first_name" type="text" aria-label="First name" class="form-control" placeholder="Enter your firstname">
-                        </label>
-                        <div style="margin-left:30px">
-                            <label class="form-label"> Last name
-                              <input name="last_name" type="text" aria-label="Last name" class="form-control" placeholder="Enter your last name">
-                            </label>
+<div class="d-flex justify-content-center">
+    <div class="py-4 w-50 position-static"  style="border-radius: 10px; background: #424c88; color: white;">
+        <div class="d-flex justify-content-center">
+                <form action="/reg" method="post">
+                    <span style="font-size: 30px; font-weight: bolder;" class="d-flex justify-content-center my-3">Create new account</span>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label" >Email address</label>
+                            <input name="email" type="email" class="form-control w-200" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
-                    </div>
-                  <div class="mb-3 my-3" >
-                    <label class="form-label">Email
-                    <input  type="email" class="form-control"  aria-describedby="emailHelp" name="email" style="width: 430px" placeholder="Enter your email address">
-                    </label>
-                  </div>
-                  <div class="mb-3">
-                    <label  class="form-label">Password
-                    <input type="password" class="form-control w-200" name="password" style="width: 430px" placeholder="Create password">
-                    </label>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label">Confirm Password
-                    <input type="password" class="form-control w-200" name="repeat_password" style="width: 430px" placeholder="Repeat password">
-                    </label>
-                  </div>
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Remember password</label>
-                  </div>
-                  <button type="submit"  class="btn btn-primary" style="display: block;
-        width: 100%;
-        text-align: center;" >Create an account</button>
-        </form>
+                        <div class="mb-3">
+                            <label for="exampleInputLastName1" class="form-label" >Last name</label>
+                            <input name="second_name" type="text" class="form-control w-200" id="exampleInputLastName1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputFirstName1" class="form-label" >First name</label>
+                            <input name="first_name" type="text" class="form-control w-200" id="exampleInputFirstName1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label " >Password</label>
+                            <input name="password" type="password" class="form-control w-200" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword2" class="form-label ">Repeat Password</label>
+                            <input name="repeat-password" type="password" class="form-control w-200" id="exampleInputPassword2">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Register</button>
+                    </form>
+            </div>
     </div>
+</div>
 {% endblock %}
