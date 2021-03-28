@@ -42,3 +42,13 @@ def send():
 @login_required
 def profile():
     return 'Здесь будет страница профиля'
+
+
+@main.route('/chats')
+def chats():
+    return render_template("chats.html")
+
+
+@main.route('/chat')
+def chat():
+    return render_template("chat.html")
