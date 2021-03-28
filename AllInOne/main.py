@@ -41,4 +41,5 @@ def send():
 @main.route('/profile')
 @login_required
 def profile():
-    return 'Здесь будет страница профиля'
+    return 'Здесь будет с ттт' \
+           'траница профиля'
