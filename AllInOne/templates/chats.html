@@ -5,15 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-<div class="list-group"> #табло с новыми сообщениями
-    <li class="list-group-item">Новые сообщения..</li>
 
-    <li class="list-group-item">(Имя)
-    <button type="button" class="list-group-item list-group-item-action">(часть сообщения)</button> #Связка имени и сообщения
-    </li>
-  <button type="button" class="list-group-item list-group-item-action">A third button item</button>
-  <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
-  <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
+<div class="d-flex flex-column bd-highlight mb-3">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    новые сообщения
+  </a>
+    <div class="list-group">
+    <div class="p-2 bd-highlight">(Имя)</div>
+  <div class="p-2 bd-highlight">(Часть сообщения)</div>
+  </div>
+<div class="d-flex flex-column bd-highlight mb-3">
+  <div class="p-2 bd-highlight">(Имя)</div>
+  <div class="p-2 bd-highlight">(Часть сообщения)</div>
+  </div>
+<div class="d-flex flex-column bd-highlight mb-3">
+  <div class="p-2 bd-highlight">(Имя)</div>
+  <div class="p-2 bd-highlight">(Часть сообщения)</div>
+  </div>
 </div>
 
 </body>
