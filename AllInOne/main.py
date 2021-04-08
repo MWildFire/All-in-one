@@ -41,6 +41,10 @@ def send():
 @main.route('/profile')
 @login_required
 def profile():
+<<<<<<< HEAD
+    return 'Здесь будет с ттт' \
+           'траница профиля'
+=======
     return 'Здесь будет страница профиля'
 
 
@@ -52,3 +56,4 @@ def chats():
 @main.route('/chat')
 def chat():
     return render_template("chat.html")
+>>>>>>> 842b46daa517ce36f28daeaf218dfc169f6eefae
