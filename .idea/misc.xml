@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />
+=======
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (FimWebApp)" project-jdk-type="Python SDK" />
+>>>>>>> 8ae9f7c57f30ab6caff5e9be223f2266ce1a76da
 </project>

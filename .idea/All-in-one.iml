@@ -2,7 +2,11 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
+<<<<<<< HEAD
+    <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
+=======
     <orderEntry type="jdk" jdkName="Python 3.8 (FimWebApp)" jdkType="Python SDK" />
+>>>>>>> 8ae9f7c57f30ab6caff5e9be223f2266ce1a76da
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
