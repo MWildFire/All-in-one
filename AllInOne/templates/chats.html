@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Чаты{% endblock%}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,24 +8,43 @@
     <title>Title</title>
 </head>
 <body>
-
-<div class="d-flex flex-column bd-highlight mb-3">
-  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-    новые сообщения
-  </a>
-    <div class="list-group">
-    <div class="p-2 bd-highlight">(Имя)</div>
-  <div class="p-2 bd-highlight">(Часть сообщения)</div>
-  </div>
-<div class="d-flex flex-column bd-highlight mb-3">
-  <div class="p-2 bd-highlight">(Имя)</div>
-  <div class="p-2 bd-highlight">(Часть сообщения)</div>
-  </div>
-<div class="d-flex flex-column bd-highlight mb-3">
-  <div class="p-2 bd-highlight">(Имя)</div>
-  <div class="p-2 bd-highlight">(Часть сообщения)</div>
-  </div>
+<div class="position-relative">
+  <div class="position-absolute top-0 start-0">
+    <div class="d-inline-flex p-2 bd-highlight">
+<ol class="list-group list-group-numbered">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold"><p class="fst-normal">Новое
+        <span class="badge bg-primary rounded-pill">4</span></p>
+      </div>
+  </li>
+  <a href="#" class="list-group-item list-group-item-action">(Имя)<br>
+  (Часть сообщения..)</a>
+  <a href="#" class="list-group-item list-group-item-action">(Имя)<br>
+  (Часть сообщения..)</a>
+  <a href="#" class="list-group-item list-group-item-action">(Имя)<br>
+  (Часть сообщения..)</a>
+  <a href="#" class="list-group-item list-group-item-action">(Имя)<br>
+  (Часть сообщения..)</a>
+  <ol class="list-group list-group-numbered">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold"><p class="fst-normal">Прочитанное</p>
+      </div>
+  </li>
+  <a href="#" class="list-group-item list-group-item-action">(Имя)<br>
+  (Часть сообщения..)</a>
+  <a href="#" class="list-group-item list-group-item-action">(Имя)<br>
+  (Часть сообщения..)</a>
+  <a href="#" class="list-group-item list-group-item-action">(Имя)<br>
+  (Часть сообщения..)</a>
+  <a href="#" class="list-group-item list-group-item-action">(Имя)<br>
+  (Часть сообщения..)</a>
 </div>
+</div>
+</div>
+  </div>
 
 </body>
 </html>
+{% endblock %}
