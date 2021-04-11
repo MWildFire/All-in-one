@@ -47,4 +47,3 @@ class Profile:
         self.city = city
         self.gender = gender
         self.age = age
-        
