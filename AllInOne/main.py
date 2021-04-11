@@ -48,6 +48,16 @@ def profile():
 def chats():
     return render_template("chats.html")
 
+# https://www.youtube.com/embed/vNSDPfeMcB0
+# https://youtu.be/vNSDPfeMcB0
+@main.route('/yt_watch', methods=['GET', 'POST'])
+def yt_watch():
+    if request.method == 'GET':
+        return render_template('yt_form.html')
+    else:
+        link = 'https://www.youtube.com/embed/' + request.form.get('link').split('/')[-1]
+        return render_template('yt_watch.html', link=link)
+
 
 @main.route('/chat')
 def chat():
