@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc0047c4-5e1a-41fe-9f15-1d39e7ffcd8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/AllInOne.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AllInOne.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/All-in-one.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/All-in-one.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Start.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Start.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +11,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1pkPxcTPTlPLmvxVn2W7B4n781Z" />
@@ -25,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="AllInOne" type="PythonConfigurationType" factoryName="Python">
@@ -62,6 +86,8 @@
       <workItem from="1615724363547" duration="10000" />
       <workItem from="1618124122809" duration="280000" />
       <workItem from="1618139327260" duration="102000" />
+      <workItem from="1618142088251" duration="8000" />
+      <workItem from="1618151666489" duration="323000" />
     </task>
     <servers />
   </component>
