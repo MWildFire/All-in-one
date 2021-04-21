@@ -41,7 +41,7 @@ def send():
 @main.route('/profile')
 @login_required
 def profile():
-    return 'Здесь будет страница профиля'
+    return render_template("profile.html")
 
 
 @main.route('/chats')
@@ -62,3 +62,7 @@ def yt_watch():
 @main.route('/chat')
 def chat():
     return render_template("chat.html")
+
+@main.route('/profile')
+def profile():
+    return render_template("profile.html")
