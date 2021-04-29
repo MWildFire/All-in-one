@@ -39,7 +39,6 @@ def send():
 
 
 @main.route('/profile')
-@login_required
 def profile():
     return render_template("profile.html")
 
@@ -63,6 +62,4 @@ def yt_watch():
 def chat():
     return render_template("chat.html")
 
-@main.route('/profile')
-def profile():
-    return render_template("profile.html")
+
